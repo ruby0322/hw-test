@@ -1,0 +1,22 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.15.3",
+    "mongoose": "^6.6.2"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "cd client && npm install && npm run build && cd .. && nodemon index.js",
+    "server": "nodemon index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "prettier": "^2.7.1",
+    "prettier-eslint": "^15.0.1"
+  }
+}
