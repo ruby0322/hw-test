@@ -10,7 +10,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "dev": "cd client && npm install && npm run build && cd .. && nodemon index.js",
+    "dev": "cd client && npm install && npm start && cd .. && nodemon index.js",
     "server": "nodemon index.js",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
